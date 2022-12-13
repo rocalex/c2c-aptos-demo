@@ -1,0 +1,16 @@
+[package]
+name = 'caller'
+version = '1.0.0'
+upgrade_policy = "compatible"
+
+[dependencies.AptosFramework]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'main'
+subdir = 'aptos-move/framework/aptos-framework'
+
+[dependencies.callee]
+local = "../callee"
+
+[addresses]
+callee = "0x6ede80bfa872ca197e9e75942b9c066c663f673fb8322dd985236fd1c3b54fa4"
+caller = "0x0bad68049c486a9973cb5bc95600519f997704166cf579dac7e365ddc24edbad"

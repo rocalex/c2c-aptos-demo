@@ -1,0 +1,12 @@
+[package]
+name = 'callee'
+version = '1.0.0'
+upgrade_policy = "compatible"
+
+[dependencies.AptosFramework]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'main'
+subdir = 'aptos-move/framework/aptos-framework'
+
+[addresses]
+callee = "0x6ede80bfa872ca197e9e75942b9c066c663f673fb8322dd985236fd1c3b54fa4"
