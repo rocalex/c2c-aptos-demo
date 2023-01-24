@@ -25,5 +25,5 @@ aptos move publish --named-addresses caller=default
 
 ```bash
 cd caller
-aptos move run --function-id 'default::message::set_message' --args 'string:hello, blockchain'
+aptos move run --function-id 'default::message_board::set_message' --args 'string:hello, blockchain'
 ```
